@@ -82,6 +82,7 @@ addForm.addEventListener("submit", (e) => {
 	e.preventDefault();
 	dialog.close();
 	addBookToLibrary();
+	addForm.reset();
 })
 
 closeForm.addEventListener("click", (e) => {
