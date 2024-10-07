@@ -7,6 +7,37 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<dialog id="dialog">
+		<form id="add-form">
+			<button type="submit" aria-label="close" formmethod="dialog" formnovalidate>X</button>
+			<h2 id="dialogid">Add Book Info</h2>
+			<field class="add-info">
+				<label for="title">Title:</label>
+				<input type="text" name="title" id="title" required>
+			</field>
+		   
+
+			<field class="add-info">
+				<label for="author">Author:</label>
+				<input type="text" name="author" id="author" >
+			</field>
+			
+			<field class="add-info">
+				<label for="pages">Number of Pages:</label>
+				<input type="number" min="0" name="pages" id="pages" required>
+		   </field>
+
+			<field class="add-info">
+				<label for="read">Already Read?</label>
+				<select name="read" id="read">
+					<option value="not-read">Not Read</option>
+					<option value="read">Read</option>
+				</select>
+			</field>
+		   
+		   <button type="submit" formmethod="post">Submit</button>
+	  </form>
+	</dialog>
 	<button class="add-book">New Book</button>
 	<div class="grid-container">
 		<div class="book-card">
