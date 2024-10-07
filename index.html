@@ -16,7 +16,6 @@
 				<input type="text" name="title" id="title" required>
 			</field>
 		   
-
 			<field class="add-info">
 				<label for="author">Author:</label>
 				<input type="text" name="author" id="author" >
@@ -30,12 +29,12 @@
 			<field class="add-info">
 				<label for="read">Already Read?</label>
 				<select name="read" id="read">
-					<option value="not-read">Not Read</option>
-					<option value="read">Read</option>
+					<option value="false">Not Read</option>
+					<option value="true">Read</option>
 				</select>
 			</field>
 		   
-		   <button type="submit" formmethod="post">Submit</button>
+			<button type="submit" class="submit-book">Submit</button>
 	  </form>
 	</dialog>
 	<button class="add-book">New Book</button>
