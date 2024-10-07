@@ -1,0 +1,51 @@
+
+.add-book {
+	background-color: lightgreen;
+	border-radius: 12px;
+	font-size: 2em;
+	text-align: center;
+	margin: 50px auto;
+	display: block;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 15px;
+	margin: 0 10%;
+}
+
+.book-card {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	align-items: center;
+	background-color: aquamarine;
+}
+
+.book-card .button-container {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.button-container button {
+	border-radius: 12px;
+}
+
+button:hover{
+	box-shadow: 2px 2px black;
+	cursor: pointer;
+}
+
+.read-button {
+	background-color: chartreuse;
+
+}
+
+.remove-button {
+	background-color: orangered;
+	color: white;
+}
